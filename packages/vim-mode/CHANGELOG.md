@@ -1,3 +1,148 @@
+## HEAD
+
+## 0.31
+
+* Added '_' binding - @ftwillms
+* Fixed an issue where the '>', '<', and '=' operators
+  would move the cursor incorrectly.
+
+## 0.30
+
+* Make toggle-case operator work with multiple cursors
+
+## 0.29
+
+* Fix regression where '%' stopped working across multiple lines
+
+## 0.28
+
+* Fix some deprecation warnings
+
+## 0.27
+
+* Enter visual mode when selecting text in command mode
+* Don't select text after undo
+* Always preserve selection of the intially-selected character in visual mode
+* Fix bugs in the '%' motion
+* Fix bugs in the 'S' operator
+
+## 0.26
+
+* Add o mapping in visual mode, for reversing selections
+* Implement toggle-case in visual mode
+* Fix bug in 'around word' text object
+
+## 0.25
+
+* Fixed a regression in the handling of the 'cw' command
+* Made the replace operator work with multiple cursors
+
+## 0.24
+
+* Fixed the position of the cursor after certain yank operations.
+* Fixed an issue where duplicate vim states were created when an editors were
+  moved to different panes.
+
+## 0.23
+
+* Made motions, operators and text-objects work properly in the
+  presence of multiple cursors.
+
+## 0.22
+
+* Fixed a stylesheet issue that caused visual glitches when vim-mode
+  was disabled with the Shadow DOM turned on.
+
+## 0.21
+
+* Fix issue where search panel was not removed properly
+* Updated the stylesheet for compatibility with shadow-DOM-enabled editors
+
+## 0.20
+* Ctrl-w for delete-to-beginning-of-word in insert mode
+* Folding key-bindings
+* Remove more deprecated APIs
+
+## 0.19.1
+* Fix behavior of ctrl-D, ctrl-U @anvyzhang
+* Fix selection when moving up or down in visual line mode @mdp
+* Remove deprecated APIs
+* Fix interaction with autocomplete
+
+## 0.19
+* Properly re-enable editor input after disabling vim-mode
+
+## 0.17
+* Fix typo
+
+## 0.16
+* Make go-to-line motions work with operators @gittyupagain
+* Allow replacing text with newlines using `r` @dcalhoun
+* Support smart-case in when searching @isaachess
+
+## 0.14
+* Ctrl-c for command mode on mac only @sgtpepper43
+* Add css to status bar mode for optional custom styling @e-jigsaw
+* Implement `-`, `+`, and `enter` @roryokane
+* Fix problem undo'ing in insert mode @bhuga
+* Remove use of deprecated APIs
+
+## 0.11.1
+* Fix interaction with autocomplete-plus @klorenz
+
+## 0.11.0
+* Fix `gg` and `G` in visual mode @cadwallion
+* Implement `%` @carlosdcastillo
+* Add ctags keybindings @tmm1
+* Fix tracking of marks when buffer changes @carlosdcastillo
+* Fix off-by-one error for characterwise puts @carlosdcastillo
+* Add support for undo and repeat to typing operations @bhuga
+* Fix keybindings for some OSes @mcnicholls
+* Fix visual `ngg` @tony612
+* Implement i{, i(, and i" @carlosdcastillo
+* Fix off by one errors while selecting with j and k @fotanus
+* Implement 'desired cursor column' behavior @iamjwc
+
+## 0.10.0
+* Fix E in visual mode @tony612
+* Implement `` @guanlun
+* Fix broken behavior when enabling/disabling @cadwallion
+* Enable search in visual mode @romankuznietsov
+* Fix end-of-line movement @abijr
+* Fix behavior of change current line `cc` in various corner cases. @jcurtis
+* Fix some corner cases of `w` @abijr
+* Don't hide cursor in visual mode @dyross
+
+## 0.9.0 - Lots of new features
+* Enable arrow keys in visual mode @fholgado
+* Additional bindings for split pane movement @zenhob
+* Fix search on invalid regex @bhuga
+* Add `s` alias to visual mode @tony612
+* Display current mode in the status bar @gblock0
+* Add marks (m, `, ') @danzimm
+* Add operator-pending mode and a single text object (`iw`) @nathansobo, @jroes
+* Add an option to start in insert mode @viveksjain
+* Fix weird behavior when pasting at the end of a file @msvbg
+* More fixes for corner cases in paste behavior @SKAhack
+* Implement * and # @roman
+* Implement ~ @badunk
+* Implement t and T @udp
+
+## 0.8.1 - Small goodies
+* Implement `ctrl-e` and `ctrl-y` @dougblack
+* Implement `/`, `?`, `n` and `N` @bhuga
+* Registers are now shared between tabs in a single atom window @bhuga
+* Show cursor only in focused editor @tony612
+* Docs updated with new methods for entering insert mode @tednaleid
+* Implement `r` @bhuga
+* Fix `w` when on the last word of a file @dougblack
+* Implement `=` @ciarand
+* Implement `E` motion @tony612
+* Implement basic `ctrl-f` and `ctrl-b` support @ciarand
+* Added `+`, `*` and `%` registers @cschneid
+* Improved `^` movement when already at the first character @zenhob
+* Fix off-by-one error for `15gg` @tony612
+
 ## 0.8.0 - Keep rocking
 * API Fixes for Atom 0.62 @bhuga
 * Add `$` and `^` to visual mode @spyc3r
@@ -36,7 +181,7 @@
 * Compatibility with Atom 0.50.0
 
 ## 0.5.0 - Updates
-* Switches apm db to cloudant from iriscouch
+* Switches apm db to buttant from iriscouch
 
 ## 0.4.0 - Updates
 * Compatibilty with Atom 26
